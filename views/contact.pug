@@ -1,0 +1,24 @@
+//- here extends means that i'am filling all that templates which I've mentioned in the 'base.pug' file
+extends base.pug
+
+//- filling 'block scripts'
+block scripts 
+    scripts(src='../public/index.js')
+
+block style 
+    style
+        include ../public/style.css            
+        include ../public/stylecontact.css            
+        //- (include style.css)generally it  searches file in the same directory
+
+block content 
+    .container 
+        h1 Contact Us 
+        form(action="/contact" , method='post' class='myForm') 
+            input(type="text" Class='myInput' name='name' placeholder='Enter your name')
+            input(type="phone" Class='myInput' name='phone' placeholder='Enter your phone number')
+            input(type="email" Class='myInput' name='email' placeholder='Enter your email id')
+            input(type="address" Class='myInput' name='address' placeholder='Enter your address')
+            input(type="desc" Class='myInput' name='desc' placeholder='Enter your concern')
+            button(class='btn')
+                | Submit 

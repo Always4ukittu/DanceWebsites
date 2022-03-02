@@ -1,0 +1,62 @@
+doctype html
+
+html
+    //- write all head stuffs inside head indentation -2 spaces
+    head
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+        title  Kittu Dance Academy
+        style
+            //- (include style.css)generally it searches file in the same directory
+            include ../public/style.css
+
+    body
+        nav#navbar
+            ul
+                div#logo
+                        img(src="/public/img/logo.png")
+                        | KDA
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+        section#introSection
+                div Welcome to Kittu's Dance Academy
+                div.small Eat Sleep Dance Repeat and Repeat
+        section#MissionSection
+                h2 Our Mission
+                div.card
+                        h4 Dance Perfection
+                                .card-img
+                                        img(src="/public/img/m1.png", alt="Mission")
+                                .card-content 
+                                        p This is the best dance academy of the world.
+                div.card 
+                        h4 Dance the way you like
+                                .card-img#mid
+                                        img(src="/public/img/m3.png", alt="Mission")
+                                .card-content 
+                                        p This is the best dance academy of the world.
+                div.card 
+                        h4 Expert Teaching
+                                .card-img
+                                        img(src="/public/img/m4.png", alt="Mission")
+                                .card-content 
+                                        p This is the best dance academy of the world.
+
+        section#sponsorsSection
+                h2 Our Sponsors
+                div#sponsors
+                        img(src="/public/img/s6.png", alt="sponsors")
+                        img(src="/public/img/s4.png", alt="sponsors")
+                        img(src="/public/img/s5.png", alt="sponsors")
+                        img(src="/public/img/s3.png", alt="sponsors")
+                        img(src="/public/img/s2.png", alt="sponsors")
+                        img(src="/public/img/s1.png", alt="sponsors")
+        footer#footer
+                | Copyright &copy; 2022 KittuDanceAcademy.com | All rights reserved        
+        script 
+                include ../public/index.js
+        
