@@ -21,3 +21,8 @@ git config --global user.name Kittu
 		--> cat <path where your key is genrated>
 		--> copy your ssh key and paste to you github account ssh key
 git push origin master  # successfully push all my contents to the repo
+
+--> to add files our update your repo
+       		--> git add .
+		--> git commit -m "Comment"
+		--> git push origin master  
