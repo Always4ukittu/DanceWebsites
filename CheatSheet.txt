@@ -26,3 +26,7 @@ git push origin master  # successfully push all my contents to the repo
        		--> git add .
 		--> git commit -m "Comment"
 		--> git push origin master  
+
+sometimes pushing updates or modification got error type below commands.. 
+  git push origin master --force
+
