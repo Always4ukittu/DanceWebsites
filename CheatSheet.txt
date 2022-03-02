@@ -8,7 +8,7 @@ git config --global user.name Kittu
  git commit -m "Initial commit" # temporary commit"
  git status
 --> go to github create 'repo' and click on SSH and copy the link
- git remote add orign < paste the url copies from SSH>  #linking git repository to current project
+ git remote add orign < paste the url copies from SSH> (eg.  git@github.com:Always4ukittu/coronaMap.git) #linking git repository to current project
 --> now go to setting of github account and go to ssh key
 		--> new ssh key
 		--> give <title> eg. "CodeWithKittu PC"
