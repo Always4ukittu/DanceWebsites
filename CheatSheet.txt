@@ -1,0 +1,23 @@
+-----CheatSHeet------------ 
+
+git config --global user.name Kittu
+ git config --global user.email "always4ukittu@gmail.com"
+ touch .gitignore   # mention the names of files which you want to ignore (eg. "node_modules/")
+ git init  # intialize the code.. and create .git folder
+ git add .   # send our contents to stagging area
+ git commit -m "Initial commit" # temporary commit"
+ git status
+--> go to github create 'repo' and click on SSH and copy the link
+ git remote add orign < paste the url copies from SSH>  #linking git repository to current project
+--> now go to setting of github account and go to ssh key
+		--> new ssh key
+		--> give <title> eg. "CodeWithKittu PC"
+--> generate ssh key  #to  provide access of your repo or git account
+		--> in gitbash ( ssh-keygen -t ed25519 -C "always4ukittu@gmail.com")
+		--> give the path were you want to save (eg. here only want to save press enter)
+		--> press enter again and again
+		--> your key is generated (path mentioned)
+-->  to see your code type 
+		--> cat <path where your key is genrated>
+		--> copy your ssh key and paste to you github account ssh key
+git push origin master  # successfully push all my contents to the repo
